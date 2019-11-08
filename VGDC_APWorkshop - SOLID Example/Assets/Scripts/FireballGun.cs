@@ -15,9 +15,10 @@ namespace Project.GunSystem
         }
         IEnumerator ShootFireballs(float bulletSpeed)
         {
+
             GameObject newBullet = Instantiate(bullet, new Vector2(transform.position.x, transform.position.y), transform.rotation);
             newBullet.GetComponent<Bullet>().SetSpeed(bulletSpeed);
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(1f);
             GameObject newBullet2 = Instantiate(bullet, new Vector2(transform.position.x, transform.position.y), transform.rotation);
             newBullet2.GetComponent<Bullet>().SetSpeed(bulletSpeed);
         }
