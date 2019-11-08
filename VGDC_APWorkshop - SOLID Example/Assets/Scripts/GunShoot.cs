@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Project.GunSystem
 {
-    public class PlayerShoot : MonoBehaviour
+    public class GunShoot : MonoBehaviour
     {
         public float pistolBulletSpeed = 25f;
         IShootable shootable;
